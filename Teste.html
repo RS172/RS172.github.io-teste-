@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adicione esta linha -->
+  <link rel="stylesheet" href="Css/Index.css"/>
+  <script type="text/javascript" src="Index.js"></script>
+  <title>Welcome</title>
+<script>
+
+</script>
+  <!-- Restante do seu código -->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #222;
+        color: #fff;
+    }
+    #container {
+        text-align: center;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    #square {
+        width: 150px;
+        height: 150px;
+        background-color: #444;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Adicionando sombra ao quadrado */
+    }
+    #square span {
+        font-size: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .button-group {
+        display: flex;
+        justify-content: space-around; /* Alterado para space-around para mais espaço entre os botões */
+        margin-bottom: 30px; /* Aumentei ainda mais o espaço entre os botões */
+        width: 100%;
+        max-width: 400px;
+    }
+    .button {
+        flex: 1;
+        flex-grow:1;
+        width:60px;
+        padding: 20px; /* Aumentei o padding para botões mais espaçados */
+        border-radius: 15px;
+        border: 0px;
+        margin: 0 15px;
+        background-color: #555;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adicionando sombra aos botões */
+    }
+    .button:hover {
+        background-color: #777;
+    }
+</style>
+</head>
+<body>
+  <p id="contador">a</p>
+    <div id="container">
+        <div id="square"><span id="my-span"><p id="text">あ</p></span></div>
+        <div class="button-group">
+            <button id="button1" class="button" onclick="Resposta('button1')">A</button>
+            <button id="button2" class="button" onclick="Resposta('button2')">I</button>
+            <button id="button3" class="button" onclick="Resposta('button3')">U</button>
+        </div>
+    </div>
+</body>
+</html>
